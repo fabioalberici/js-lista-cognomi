@@ -9,3 +9,21 @@
     <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
+// utente inserisce due prompt
+var primaParola = prompt('dimmi la tua prima parola');
+var secondaParola = prompt('dimmi la tua seconda parola');
+var messaggio;
+// stampiamo quella piu corta
+if (primaParola.length > secondaParola.length) {
+  messaggio = secondaParola + ' - ' + primaParola;
+  console.log(secondaParola + ' - ' + primaParola);
+} else if (primaParola.length < secondaParola.length) {
+  messaggio = primaParola + ' - ' + secondaParola;
+  console.log(primaParola + ' - ' + secondaParola);
+} else {
+  messaggio = 'le parole sono lunghe uguali';
+  console.log('le parole sono lunghe uguali')
+}
+
+
+alert(messaggio);
